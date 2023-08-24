@@ -5,7 +5,8 @@ import { DrawCardsComponent } from './components/draw-cards/draw-cards.component
 
 const routes: Routes = [
   { path: '', component: MainComponent },
-  { path: 'draw/:id', component: DrawCardsComponent}
+  { path: 'draw/:id', component: DrawCardsComponent},
+  { path: '**', redirectTo: '/', pathMatch: 'full'}
 ];
 
 @NgModule({

@@ -3,6 +3,7 @@
 <p>Remaining cards: {{remainingCards}}</p>
 <button type="button" (click)="drawCards()">Draw</button>
 <input type="number" value="1" [max]="remainingCards" step="1" min="1" #noOfCards>
+<button type="button" (click)="clear()">Clear</button>
 <table *ngIf="cardSummary != null">
     <tr *ngFor="let card of cardSummary.cards">
         <td><img [src]="card.image"></td>
