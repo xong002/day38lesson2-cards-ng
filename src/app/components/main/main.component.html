@@ -1,0 +1,10 @@
+
+<h1>Create deck</h1>
+
+<br>
+<span>Select number of decks:</span>
+<select #decks (change)="selectValue()">
+    <option *ngFor="let v of noOfDecksArr">{{v}}</option>
+</select>
+<br><br>
+<div><button (click)="createDecks()">Create decks</button></div>
